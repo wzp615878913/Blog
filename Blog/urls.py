@@ -22,4 +22,6 @@ urlpatterns = [
     
     url(r'^note/$', blog_views.noteBook,name = 'notebook'),
     url(r'^$', blog_views.timeLine,name = 'timeline'),
+    url(r'^manage/$',blog_views.manageNote,name = 'manage'),
+    url(r'^trash/$',blog_views.trash,name = 'manage'),
 ]

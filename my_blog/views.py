@@ -11,3 +11,12 @@ def noteBook(request):
 # 最近的笔记（时间轴）
 def timeLine(request):
 	return render(request, 'recentnote.html')
+
+# 管理笔记本
+def manageNote(request):
+	return render(request,'manage_notebook.html')
+
+# 回收站
+
+def trash(request):
+	return render(request,'trash.html')
